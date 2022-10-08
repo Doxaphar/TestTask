@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculator", "AreaCalcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculatorTests", "AreaCalculatorTests\AreaCalculatorTests.csproj", "{2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask2", "TestTask2\TestTask2.csproj", "{13E7BDAB-49DD-45EC-9029-FDFEBC4CE9F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13E7BDAB-49DD-45EC-9029-FDFEBC4CE9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13E7BDAB-49DD-45EC-9029-FDFEBC4CE9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13E7BDAB-49DD-45EC-9029-FDFEBC4CE9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13E7BDAB-49DD-45EC-9029-FDFEBC4CE9F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

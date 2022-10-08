@@ -1,4 +1,6 @@
-﻿namespace AreaCalculator
+﻿using AreaCalculator.Figures;
+
+namespace AreaCalculator
 {
     public class AreaCalculator
     {

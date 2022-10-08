@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AreaCalculator
+namespace AreaCalculator.Figures
 {
     public class Triangle : IFigure
     {
@@ -32,7 +32,7 @@ namespace AreaCalculator
             return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
         }
 
-        public Type GetType()
+        public new Type GetType()
         {
             var sides = new List<double> { A, B, C }
                 .Select(x => Math.Pow(x, 2))

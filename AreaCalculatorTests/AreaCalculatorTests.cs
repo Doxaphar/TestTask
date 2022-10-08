@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
 using AreaCalculator;
+using AreaCalculator.Figures;
 
 namespace AreaCalculatorTests
 {
