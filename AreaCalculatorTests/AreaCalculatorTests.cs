@@ -66,5 +66,12 @@ namespace AreaCalculatorTests
         {
             Assert.AreEqual(result, _areaCalculator.GetTriangleType(a, b, c));
         }
+
+        [TestCase(3, 4, 5, true)]
+        [TestCase(4, 4, 6, false)]
+        public void IsTriangleRight_Success_Test(double a, double b, double c, bool result)
+        {
+            Assert.AreEqual(result, _areaCalculator.IsTriangleRight(a, b, c));
+        }
     }
 }

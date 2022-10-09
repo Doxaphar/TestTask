@@ -38,5 +38,10 @@ namespace AreaCalculator
         {
             return GetTriangle(a, b, c).GetType();
         }
+
+        public bool IsTriangleRight(double a, double b, double c)
+        {
+            return GetTriangle(a, b, c).GetType() == Triangle.Type.Right;
+        }
     }
 }
