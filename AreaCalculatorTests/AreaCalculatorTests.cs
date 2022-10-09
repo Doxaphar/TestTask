@@ -1,6 +1,5 @@
 using System;
 using NUnit.Framework;
-using AreaCalculator;
 using AreaCalculator.Figures;
 
 namespace AreaCalculatorTests
@@ -33,14 +32,14 @@ namespace AreaCalculatorTests
         [Test]
         public void GetTriangleArea_Success_Test()
         {
-            Assert.AreEqual(6, Math.Round(_areaCalculator.GetTriangleArea(3, 4, 5), 5));
+            Assert.AreEqual(6, Math.Round(_areaCalculator.GetArea(3, 4, 5), 5));
         }
         
         [TestCase(2, 12.56637, TestName = "Basic circle")]
         [TestCase(0, 0, TestName = "Degenerated circle")]
         public void GetCircleArea_Success_Test(double radius, double result)
         {
-            Assert.AreEqual(result, Math.Round(_areaCalculator.GetCircleArea(radius), 5));
+            Assert.AreEqual(result, Math.Round(_areaCalculator.GetArea(radius), 5));
         }
         
         [TestCase(3, 3, 5, Triangle.Type.Obtuse)]

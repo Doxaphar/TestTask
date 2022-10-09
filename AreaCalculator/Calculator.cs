@@ -18,17 +18,17 @@ namespace AreaCalculator
         {
             return figure.GetArea();
         }
+        
+        public double GetArea(double a, double b, double c)
+        {
+            return GetTriangle(a, b, c).GetArea();
+        }
+        
+        public double GetArea(double radius)
+        {
+            return GetCircle(radius).GetArea();
+        }
 
-        public double GetTriangleArea(double a, double b, double c)
-        {
-            return GetArea(GetTriangle(a, b, c));
-        }
-        
-        public double GetCircleArea(double radius)
-        {
-            return GetArea(GetCircle(radius));
-        }
-        
         public Triangle.Type GetTriangleType(Triangle triangle)
         {
             return triangle.GetType();
