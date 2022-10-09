@@ -1,6 +1,6 @@
 using System;
 
-namespace AreaCalculator
+namespace AreaCalculator.Figures
 {
     public class Circle : IFigure
     {
