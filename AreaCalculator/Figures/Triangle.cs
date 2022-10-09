@@ -6,7 +6,7 @@ namespace AreaCalculator.Figures
 {
     public class Triangle : IFigure
     {
-        protected readonly double A, B, C;
+        protected readonly double _a, _b, _c;
         public enum Type
         {
             Acute,
@@ -21,20 +21,20 @@ namespace AreaCalculator.Figures
             {
                 throw new Exception("Triangle does not exist");
             }
-            this.A = a;
-            this.B = b;
-            this.C = c;
+            this._a = a;
+            this._b = b;
+            this._c = c;
         }
 
         public double GetArea()
         {
-            var p = (A + B + C) / 2;
-            return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+            var p = (_a + _b + _c) / 2;
+            return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
         }
 
         public new Type GetType()
         {
-            var sides = new List<double> { A, B, C }
+            var sides = new List<double> { _a, _b, _c }
                 .Select(x => Math.Pow(x, 2))
                 .OrderBy(x => x)
                 .ToList();
