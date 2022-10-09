@@ -1,4 +1,4 @@
-namespace AreaCalculator
+namespace AreaCalculator.Figures
 {
     public interface IFigure
     {
