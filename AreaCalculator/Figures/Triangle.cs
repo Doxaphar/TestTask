@@ -45,7 +45,7 @@ namespace AreaCalculator.Figures
                 return Type.Acute;
             }
 
-            if (Math.Abs(sides[1] + sides[0] - sides[2]) < Double.MinValue)
+            if (Math.Abs(sides[1] + sides[0] - sides[2]) <= Double.Epsilon)
             {
                 return Type.Right;
             }

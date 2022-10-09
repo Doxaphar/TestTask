@@ -47,31 +47,39 @@ namespace AreaCalculatorTests
         
         [TestCase(3, 4, 5, 6, TestName = "Basic triangle")]
         [TestCase(0, 1, 1, 0, TestName = "Degenerated triangle")]
-        public void GetTriangleArea_Success_Test(double a, double b, double c, double result)
+        public void GetTriangleArea_Success_Test(double a, double b, double c, double expectedResult)
         {
-            Assert.AreEqual(result, Math.Round(_areaCalculator.GetArea(a, b, c), 5));
+            var result = Math.Round(_areaCalculator.GetArea(a, b, c), 5);
+            
+            Assert.AreEqual(expectedResult, result);
         }
         
         [TestCase(2, 12.56637, TestName = "Basic circle")]
         [TestCase(0, 0, TestName = "Degenerated circle")]
-        public void GetCircleArea_Success_Test(double radius, double result)
+        public void GetCircleArea_Success_Test(double radius, double expectedResult)
         {
-            Assert.AreEqual(result, Math.Round(_areaCalculator.GetArea(radius), 5));
+            var result = Math.Round(_areaCalculator.GetArea(radius), 5);
+            
+            Assert.AreEqual(expectedResult, result);
         }
         
         [TestCase(3, 3, 5, Triangle.Type.Obtuse)]
         [TestCase(3, 4, 5, Triangle.Type.Right)]
         [TestCase(4, 4, 5, Triangle.Type.Acute)]
-        public void GetTriangleTypeBySides_Success_Test(double a, double b, double c, Triangle.Type result)
+        public void GetTriangleTypeBySides_Success_Test(double a, double b, double c, Triangle.Type expectedResult)
         {
-            Assert.AreEqual(result, _areaCalculator.GetTriangleType(a, b, c));
+            var result = _areaCalculator.GetTriangleType(a, b, c);
+            
+            Assert.AreEqual(expectedResult, result);
         }
 
         [TestCase(3, 4, 5, true)]
         [TestCase(4, 4, 6, false)]
-        public void IsTriangleRight_Success_Test(double a, double b, double c, bool result)
+        public void IsTriangleRight_Success_Test(double a, double b, double c, bool expectedResult)
         {
-            Assert.AreEqual(result, _areaCalculator.IsTriangleRight(a, b, c));
+            var result = _areaCalculator.IsTriangleRight(a, b, c);
+            
+            Assert.AreEqual(expectedResult, result);
         }
     }
 }
