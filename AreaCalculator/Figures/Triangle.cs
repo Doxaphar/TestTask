@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace AreaCalculator.Figures
@@ -17,10 +18,11 @@ namespace AreaCalculator.Figures
         public Triangle(double a, double b, double c)
         {
             var maxSide = Math.Max(a, Math.Max(b, c));
-            if (maxSide >= a + b + c - maxSide || a < 0 || b < 0 || c < 0)
+            if (a < 0 || b < 0 || c < 0 || maxSide > a + b + c - maxSide)
             {
                 throw new Exception("Triangle does not exist");
             }
+
             this._a = a;
             this._b = b;
             this._c = c;

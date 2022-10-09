@@ -14,12 +14,28 @@ namespace AreaCalculatorTests
             _areaCalculator = new AreaCalculator.AreaCalculator();
         }
         
+        [TestCase(6, 9, 13, TestName = "Basic triangle")]
+        [TestCase(1, 1, 2, TestName = "Degenerated triangle")]
+        public void GetTriangle_Success_Test(double a, double b, double c)
+        {
+            Assert.DoesNotThrow(() => _areaCalculator.GetTriangle(a, b, c), 
+                "The triangle exists, but there are exceptions");
+        }
+        
         [TestCase(1, 1, 5, TestName = "Very big max side")]
-        [TestCase(-1, 1, 1, TestName = "Negative side")]
+        [TestCase(-1, -1, 0, TestName = "Negative side")]
         public void GetTriangle_DoesNotExist_Test(double a, double b, double c)
         {
             Assert.Throws<Exception>(() => _areaCalculator.GetTriangle(a, b, c), 
                 "Triangle does not exist, but there are no exceptions");
+        }
+        
+        [TestCase(3, TestName = "Basic circle")]
+        [TestCase(0, TestName = "Degenerated triangle")]
+        public void GetCircle_Success_Test(double radius)
+        {
+            Assert.DoesNotThrow(() => _areaCalculator.GetCircle(radius), 
+                "The circle exists, but there are exceptions");
         }
         
         [Test]
@@ -29,10 +45,11 @@ namespace AreaCalculatorTests
                 "Circle does not exist, but there are no exceptions");
         }
         
-        [Test]
-        public void GetTriangleArea_Success_Test()
+        [TestCase(3, 4, 5, 6, TestName = "Basic triangle")]
+        [TestCase(0, 1, 1, 0, TestName = "Degenerated triangle")]
+        public void GetTriangleArea_Success_Test(double a, double b, double c, double result)
         {
-            Assert.AreEqual(6, Math.Round(_areaCalculator.GetArea(3, 4, 5), 5));
+            Assert.AreEqual(result, Math.Round(_areaCalculator.GetArea(a, b, c), 5));
         }
         
         [TestCase(2, 12.56637, TestName = "Basic circle")]
