@@ -1,11 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=62f64849_002D63cd_002D443c_002Da82e_002D30ef20a3822f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetCircleArea_Success" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9::.NETFramework,Version=v4.8::AreaCalculator.AreaCalculatorTests.GetCircleArea_Success&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9::.NETFramework,Version=v4.8::AreaCalculator.AreaCalculatorTests.GetTriangle_TriangleDoesNotExist&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::2D09B8EF-5A2B-44BC-B3AF-0038DE9D85A9::.NETFramework,Version=v4.8::AreaCalculator.AreaCalculatorTests.GetTriangle_DoesNotExist&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
-&lt;/SessionState&gt;</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dceb8b5b_002D99bc_002D41f1_002Da61c_002D17352302e8ff/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetCircle_DoesNotExist" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Project Location="/Users/doxaphar/RiderProjects/Test1/AreaCalculatorTests" Presentation="&amp;lt;AreaCalculatorTests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
