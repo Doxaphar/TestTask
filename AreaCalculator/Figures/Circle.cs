@@ -4,7 +4,7 @@ namespace AreaCalculator
 {
     public class Circle : IFigure
     {
-        protected readonly double Radius;
+        protected readonly double _radius;
         
         public Circle(double radius)
         {
@@ -12,12 +12,12 @@ namespace AreaCalculator
             {
                 throw new Exception("Circle does not exist");
             }
-            this.Radius = radius;
+            this._radius = radius;
         }
 
         public double GetArea()
         {
-            return Math.PI * Radius * Radius;
+            return Math.PI * _radius * _radius;
         }
     }
 }
